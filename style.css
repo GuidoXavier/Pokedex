@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align:  center;
+    background: linear-gradient(to bottom,rgb(124, 220, 222), rgb(234, 230, 230));
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    border-radius: 10px;
+    width: 120%;
+    max-width: 450px;
+}
+
+.pokemon {
+   position: absolute; 
+   bottom: 33%;
+   left: 17%;
+   height: 25%;
+}
+
+.pokemonDados {
+ position: absolute;
+ font-weight: 600;
+ font-size: 120%;
+ color: #aaa;
+ top: 30%;
+ right: 3%;
+}
+.pokemonNome {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+.pokemonInformacao{
+    position: absolute;
+    font-weight: 300;
+    font-size: 80%;
+    color: white;
+    top: 40%;
+    right:-1%;
+
+    max-height: 43%;
+    width: 34%;
+    overflow-y: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 4px;
+}
+
+.pokemonInformacao::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+.pokemonInformacao::-webkit-scrollbar-thumb{
+background: #aaa;
+border-radius: 40px;
+}
+
+.pokemonInformacao::-webkit-scrollbar-thumb:hover{
+    background: white;
+}
+
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 100%;
+    left: 13.5%;
+  }
+  
+  .buscaPoke {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: 20;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+
+
+  
+  .btn {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  }
+
+  
+  .button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+  }
